@@ -7,7 +7,10 @@ export const TransactionContainer = styled.div`
     margin-left:30px;
     @media (max-width:768px){
         margin-left:0px;
-        text-align: -webkit-center;        
+        text-align:center;
+        text-align: -webkit-center;
+        margin-left:5px;
+        margin-right:5px;
     }
 `;
 
