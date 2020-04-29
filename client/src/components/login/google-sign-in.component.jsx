@@ -21,15 +21,13 @@ class GoogleSignIn extends React.Component {
 		)
 	}
 	responseGoogle = async response => {		
-		console.log("IN RESPONSE GOOGLE")
 		const link = `${API_ORIGIN_URL}/oauth/google/login`;
 		await this.props.googleAuthLogin(link, response.tokenId);
 		if(this.props.isAuthenticated)
 			this.props.history.push('/dashboard');
 	}
-	responseGoogleError = async response => {		
-		console.log("IN RESPONSE GOOGLE ERROR")
-		console.log(response);
+	responseGoogleError = response => {		
+		console.log("Response error!");
 	}
 
 }
