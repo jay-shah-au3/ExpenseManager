@@ -6,7 +6,10 @@ export const ModalContainer = styled.div`
 `;
 
 export const ModalInput = styled.input`
-    padding:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0px;
+    padding-right:0px;
     border:none;
     margin-left:10px;
 `;

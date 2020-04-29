@@ -17,8 +17,9 @@ export const TransactionContainer = styled.div`
 export const InputBoxContainer = styled.div`
     margin-top:20px;
     border:1px solid grey;
-    width:225px; 
+    width:225px;
     border-radius:5px;
+    text-align:center;
     .react-date-picker__wrapper {
         width:225px;
         padding:10px;
@@ -33,14 +34,18 @@ export const InputBoxContainer = styled.div`
 `;
 
 export const InputTitleContainer = styled.p`
-    color:grey;
     text-align:center;
+    color:grey;
 `;
 
 export const InputContainer = styled.input`
     border:none;
-    padding:10px;
-    margin-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-left:5px;
+    text-align:center;
 `;
 
 export const InputErrorContainer = styled.p`
