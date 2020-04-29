@@ -43,6 +43,7 @@ export const InputContainer = styled.input`
     padding-top:10px;
     padding-bottom:10px;
     padding-left:0px;
+    margin-left:0px;
     padding-right:0px;
     text-align:center;
 `;
