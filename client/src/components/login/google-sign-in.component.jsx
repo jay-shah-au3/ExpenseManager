@@ -14,18 +14,24 @@ class GoogleSignIn extends React.Component {
 					clientId={CLIENT_ID}
 					buttonText="Login"
 					onSuccess={this.responseGoogle}
-					onFailure={this.responseGoogle}
+					onFailure={this.responseGoogleError}
 					cookiePolicy={"single_host_origin"}
 				/>
 			</Fragment>
 		)
 	}
 	responseGoogle = async response => {		
+		console.log("IN RESPONSE GOOGLE")
 		const link = `${API_ORIGIN_URL}/oauth/google/login`;
 		await this.props.googleAuthLogin(link, response.tokenId);
 		if(this.props.isAuthenticated)
 			this.props.history.push('/dashboard');
 	}
+	responseGoogleError = async response => {		
+		console.log("IN RESPONSE GOOGLE ERROR")
+		console.log(repsonse);
+	}
+
 }
 
 const mapStateToProps = (state) => ({
