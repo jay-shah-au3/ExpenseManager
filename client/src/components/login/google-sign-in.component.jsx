@@ -29,7 +29,7 @@ class GoogleSignIn extends React.Component {
 	}
 	responseGoogleError = async response => {		
 		console.log("IN RESPONSE GOOGLE ERROR")
-		console.log(repsonse);
+		console.log(response);
 	}
 
 }
