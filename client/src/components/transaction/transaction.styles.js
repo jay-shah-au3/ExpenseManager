@@ -6,18 +6,15 @@ export const TransactionContainer = styled.div`
     margin-top:30px;
     margin-left:30px;
     @media (max-width:768px){
-        margin-left:0px;
         text-align:center;
         text-align: -webkit-center;
-        margin-left:5px;
-        margin-right:5px;
     }
 `;
 
 export const InputBoxContainer = styled.div`
     margin-top:20px;
     border:1px solid grey;
-    width:225px;
+    width:235px;
     border-radius:5px;
     text-align:center;
     .react-date-picker__wrapper {

@@ -11,7 +11,6 @@ export const ModalInput = styled.input`
     padding-left:0px;
     padding-right:0px;
     border:none;
-    margin-left:10px;
 `;
 
 export const ModalDialog = styled.div`
