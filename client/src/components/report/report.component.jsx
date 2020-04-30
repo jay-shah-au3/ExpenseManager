@@ -11,7 +11,7 @@ class Report extends React.Component {
         this.state = {
             allExpenseTransactions : [],
             allIncomeTransactions : [],
-            allTransactions : [],
+            allTransactions : null,
         }
     }
     async componentDidMount(){
@@ -49,8 +49,8 @@ class Report extends React.Component {
                         :null
                     }
                     {
-                        allTransactions && allTransactions.length > 0 ? null 
-                        : <h3> No Transactions done as of now!</h3>                        
+                        allTransactions && allTransactions.length === 0 ?
+                        <h3> No Transactions done as of now!</h3> : null 
                     }
                 </ReportRowContainer>
             </ReportContainer>
